@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/textviewid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Add New Task"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleid"
+        android:hint="Enter Title"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/textviewid"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desid"
+        android:hint="Description"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_below="@+id/textviewid"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/taskbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desid"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="100dp"
+        android:text="Add"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        >
+
+    </Button>
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+android:layout_height="match_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<TextView
+    android:id="@+id/editviewid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:text="Edit Task"
+    android:textAlignment="center"
+    android:textColor="@android:color/holo_blue_dark"
+    android:textSize="50dp"
+    android:textStyle="bold" />
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/edittitleid"
+    android:hint="Enter Title"
+    android:textSize="20dp"
+    android:layout_below="@+id/editviewid"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    />
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/editdesid"
+    android:hint="Description"
+    android:textSize="20dp"
+    android:layout_below="@+id/edittitleid"
+    android:layout_marginTop="80dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editdesid"
+        >
+
+        <Button
+            android:id="@+id/cancelbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="100dp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <Button
+    android:id="@+id/editbutton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+
+
+    android:textSize="16sp"
+    android:textAllCaps="false"
+    android:layout_marginTop="60dp"
+    android:text="Save"
+
+    android:backgroundTint="@android:color/holo_blue_dark"
+    >
+
+</Button>
+    </LinearLayout>
+
+
+</RelativeLayout>
